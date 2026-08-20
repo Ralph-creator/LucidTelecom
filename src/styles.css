@@ -274,6 +274,10 @@ button {
     box-shadow: 0 8px 18px rgba(5, 150, 105, .18);
 }
 
+.theme-dark button.bg-emerald-600.shadow-lg.shadow-emerald-200 {
+    box-shadow: 0 6px 14px rgba(5, 150, 105, .16);
+}
+
 .theme-dark .success-toast {
     background-color: #172033;
     border-color: #065f46;
