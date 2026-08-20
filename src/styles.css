@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.shimmer {
+    background: linear-gradient(100deg, rgba(255, 255, 255, .08) 25%, rgba(255, 255, 255, .22) 37%, rgba(255, 255, 255, .08) 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.35s ease infinite;
+}
+
+.rounded-3xl .shimmer {
+    background: linear-gradient(100deg, #e2e8f0 25%, #f8fafc 37%, #e2e8f0 63%);
+    background-size: 400% 100%;
+}
+
+.service-card {
+    border-color: #e8edf3;
+}
+
+.service-icon {
+    background: var(--soft);
+    color: var(--accent);
+}
+
+.service-blue {
+    --soft: #eff6ff;
+    --accent: #2563eb;
+}
+
+.service-green {
+    --soft: #ecfdf5;
+    --accent: #059669;
+}
+
+.service-rose {
+    --soft: #fff1f2;
+    --accent: #e11d48;
+}
+
+.service-amber {
+    --soft: #fffbeb;
+    --accent: #d97706;
+}
+
+.service-purple {
+    --soft: #f5f3ff;
+    --accent: #7c3aed;
+}
+
+.service-cyan {
+    --soft: #ecfeff;
+    --accent: #0891b2;
+}
+
+.service-indigo {
+    --soft: #eef2ff;
+    --accent: #4f46e5;
+}
+
+.service-orange {
+    --soft: #fff7ed;
+    --accent: #ea580c;
+}
+
+@keyframes shimmer {
+    from {
+        background-position: 100% 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
+}
+
+@keyframes modal-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-enter {
+    animation: modal-in .22s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.login-glow {
+    position: absolute;
+    height: 24rem;
+    width: 24rem;
+    border-radius: 9999px;
+    filter: blur(90px);
+}
+
+.theme-dark {
+    color-scheme: dark;
+}
+
+.theme-dark .bg-slate-50 {
+    background-color: #0f172a;
+}
+
+.theme-dark .bg-white {
+    background-color: #172033;
+}
+
+.theme-dark .bg-slate-900 {
+    background-color: #020617;
+}
+
+.theme-dark .text-slate-900 {
+    color: #f8fafc;
+}
+
+.theme-dark .text-slate-800 {
+    color: #e2e8f0;
+}
+
+.theme-dark .text-slate-700 {
+    color: #cbd5e1;
+}
+
+.theme-dark .text-slate-600 {
+    color: #cbd5e1;
+}
+
+.theme-dark .text-slate-500 {
+    color: #94a3b8;
+}
+
+.theme-dark .text-slate-400 {
+    color: #94a3b8;
+}
+
+.theme-dark .text-slate-300 {
+    color: #cbd5e1;
+}
+
+.theme-dark .border-slate-200,
+.theme-dark .border-slate-200\/80 {
+    border-color: #334155;
+}
+
+.theme-dark .border-slate-100 {
+    border-color: #273449;
+}
+
+.theme-dark .shadow-slate-200,
+.theme-dark .shadow-slate-300\/30,
+.theme-dark .shadow-slate-300\/50 {
+    --tw-shadow-color: rgba(2, 6, 23, .45);
+}
+
+.theme-dark .hover\:bg-white:hover {
+    background-color: #273449;
+}
+
+.theme-dark .hover\:bg-slate-50:hover {
+    background-color: #1e293b;
+}
+
+.theme-dark .hover\:bg-slate-100:hover {
+    background-color: #273449;
+}
+
+.theme-dark .service-card {
+    border-color: #334155;
+}
+
+.theme-dark .service-card .bg-slate-50 {
+    background-color: #1e293b;
+}
+
+.theme-dark .service-blue {
+    --soft: #172554;
+}
+
+.theme-dark .service-green {
+    --soft: #052e2b;
+}
+
+.theme-dark .service-rose {
+    --soft: #4c0519;
+}
+
+.theme-dark .service-amber {
+    --soft: #451a03;
+}
+
+.theme-dark .service-purple {
+    --soft: #2e1065;
+}
+
+.theme-dark .service-cyan {
+    --soft: #083344;
+}
+
+.theme-dark .service-indigo {
+    --soft: #1e1b4b;
+}
+
+.theme-dark .service-orange {
+    --soft: #431407;
+}
+
+.theme-dark .bg-emerald-50 {
+    background-color: #063b35;
+}
+
+.theme-dark .bg-blue-50 {
+    background-color: #172554;
+}
+
+.theme-dark .bg-amber-50 {
+    background-color: #451a03;
+}
+
+.theme-dark .bg-rose-50 {
+    background-color: #4c0519;
+}
+
+.theme-dark input,
+.theme-dark select {
+    background-color: #1e293b;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+.theme-dark input:focus {
+    background-color: #273449;
+}
+
+.theme-dark input::placeholder {
+    color: #64748b;
+}
+
+.theme-dark .theme-toggle {
+    color: #fbbf24;
+}
+
+.theme-dark .theme-toggle:hover {
+    color: #fcd34d;
+}
