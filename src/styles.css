@@ -273,3 +273,10 @@ button {
     background-color: #059669;
     box-shadow: 0 8px 18px rgba(5, 150, 105, .18);
 }
+
+.theme-dark .success-toast {
+    background-color: #172033;
+    border-color: #065f46;
+    color: #6ee7b7;
+    box-shadow: 0 12px 24px rgba(2, 6, 23, .28);
+}
