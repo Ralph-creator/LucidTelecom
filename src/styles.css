@@ -263,3 +263,13 @@ button {
 .theme-dark .theme-toggle:hover {
     color: #fcd34d;
 }
+
+.theme-dark button.bg-slate-900.shadow-xl.shadow-slate-300 {
+    background-color: #1e293b;
+    box-shadow: 0 8px 18px rgba(2, 6, 23, .22);
+}
+
+.theme-dark button.bg-slate-900.shadow-xl.shadow-slate-300:hover {
+    background-color: #059669;
+    box-shadow: 0 8px 18px rgba(5, 150, 105, .18);
+}
